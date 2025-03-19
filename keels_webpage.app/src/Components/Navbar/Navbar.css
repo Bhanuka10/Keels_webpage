@@ -1,0 +1,46 @@
+.navbar{
+    padding: 20px 60px;
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
+    font-family: outfit;
+}
+.kells_logo{
+    width: 100px;
+    height: auto;
+}
+.navbar-men ul{
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+
+}
+.navbar-men ul li{
+    text-decoration: none;
+    font-size: 18px;
+    
+
+}
+.navbar-right{
+    display: flex;
+    gap: 40px;
+    padding-right: 20px;
+    
+}
+.navbar-right img {
+    width: 30px ;
+    height: auto;
+}
+.navbar-right .serch{
+    width: 25px !important;
+    height: auto !important;
+}
+.navbar-right button{
+    padding: 5px 8px ;
+    border-radius: 10px;
+    font-size: 13px;
+    border: 1px solid rgb(17, 148, 17);
+    background-color: transparent;
+    cursor: pointer;
+    color: rgb(91, 90, 90);
+}
