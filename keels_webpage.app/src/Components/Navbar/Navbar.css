@@ -19,6 +19,7 @@
     text-decoration: none;
     font-size: 18px;
     color: rgb(57, 59, 57);
+    cursor: pointer;
     
 
 }
@@ -52,5 +53,5 @@
 .navbar-men ul li.active{
     padding-bottom: 2px;
     border-bottom: 2px solid rgb(86, 84, 84);
-    
+    transition: 0.3s;
 }
