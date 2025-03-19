@@ -18,6 +18,7 @@
 .navbar-men ul li{
     text-decoration: none;
     font-size: 18px;
+    color: rgb(57, 59, 57);
     
 
 }
@@ -43,7 +44,13 @@
     background-color: transparent;
     cursor: pointer;
     color: rgb(91, 90, 90);
+    transition: 0.3s;
 }
 .navbar-right button:hover{
     background-color: rgb(188, 215, 189);
+}
+.navbar-men ul li.active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid rgb(86, 84, 84);
+    
 }
