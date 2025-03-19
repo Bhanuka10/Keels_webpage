@@ -44,3 +44,6 @@
     cursor: pointer;
     color: rgb(91, 90, 90);
 }
+.navbar-right button:hover{
+    background-color: rgb(188, 215, 189);
+}
