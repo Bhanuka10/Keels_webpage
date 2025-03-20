@@ -54,4 +54,17 @@
     padding-bottom: 2px;
     border-bottom: 2px solid rgb(86, 84, 84);
     transition: 0.3s;
+
+}
+.navbar-serch-icon{
+    position: relative;
+}
+.navbar-serch-icon .dot{
+    position: absolute;
+    min-height: 10px;
+    min-width: 10px;
+    background-color: tomato;
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
 }
