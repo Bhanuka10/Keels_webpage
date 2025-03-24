@@ -1,0 +1,41 @@
+.header {
+    height: 28vw; /* Adjusted height for better visibility */
+    margin: 0 auto;
+    background: url('/copy-space-organic-fruits-smoothie.jpg') no-repeat center center; /* Ensure correct path */
+    background-size: cover; /* Cover the entire header area */
+    position: relative;
+    max-width: 1100px;
+    border-radius: 20px;
+}
+
+.header-contents {
+    text-align: center;
+    padding: 25px 35px ;
+    color: white; /* Ensure text is visible on the background */
+    max-width: 450px;
+    padding-top: 20px;
+   
+  
+}
+.header-contents h1 {
+    font-size: 55px;
+    font-family: Montserrat;
+}
+.header-contents h2{
+    font-size: 25px;
+    padding-top: 20px;
+}
+.header-contents p {
+    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.header-contents button {
+    padding: 6px 8px;
+    margin-top: 15px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: rgb(26, 52, 38);
+    cursor: pointer;
+    border-radius: 20px;
+}
