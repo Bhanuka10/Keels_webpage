@@ -1,11 +1,13 @@
 .header {
-    height: 28vw; /* Adjusted height for better visibility */
+    height: 28vw; /* Adjusted height */
     margin: 0 auto;
     background: url('/copy-space-organic-fruits-smoothie.jpg') no-repeat center center; /* Ensure correct path */
     background-size: cover; /* Cover the entire header area */
-    position: relative;
+    position: relative; /* Ensure z-index works */
+    z-index: 10; /* Bring the header to the front */
     max-width: 1100px;
     border-radius: 20px;
+    overflow: hidden; /* Prevent content overflow */
 }
 
 .header-contents {
