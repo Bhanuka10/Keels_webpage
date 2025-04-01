@@ -1,0 +1,21 @@
+.explore-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    align-items: center;
+    justify-content: center; /* Center vertically */
+    background-color: aqua;
+    margin: auto; /* Center horizontally */
+    margin-top: 50px;
+}
+.explore-menu h1{
+    font-weight: 600;
+    color: rgb(4, 59, 4);
+    font-family: poppins;
+}
+.explore-menu-text{
+    max-width: 70%;
+    color: rgb(4, 59, 4);
+    font-size: 20px;
+}
