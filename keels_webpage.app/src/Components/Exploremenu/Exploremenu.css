@@ -17,14 +17,33 @@
     max-width: 70%;
     color: rgb(4, 59, 4);
     font-size: 20px;
+    text-align: center;
 }
 .explore-menu-list{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
     max-width: 900px;
     text-align: center;
     margin: 20px auto;
    overflow-x: scroll;
+}
+.explore-menu-list::-webkit-scrollbar{
+    display: none; 
+}
+
+
+.explore-menu-list-item img{
+    width: 7.5vw;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+.explore-menu-list-item p{
+    margin-top: 10px;
+    color: rgb(4, 70, 4);
+    font-size: 20px;
+    cursor: pointer;
 }

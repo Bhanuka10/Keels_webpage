@@ -6,7 +6,7 @@ const Exploremenu = () => {
   return (
     <div className='explore-menu' id='explore-menu'>
       <h1>Explore Our Menu</h1>
-      <p className='explore-menu-text'>Discover an endless variety of fresh, high-quality products all in one place, just for you at Keells!</p>
+      <p className='explore-menu-text'>At Keells, we bring you an unbeatable variety of the freshest produce, finest groceries, and everyday essentials, carefully selected to meet your needs, ensuring quality, convenience, and great value all in one place!</p>
       <div className='explore-menu-list'>
         {menu_list.map((item, index) => {
           return (
