@@ -18,6 +18,7 @@ const Exploremenu = () => {
           );
         })}
       </div>
+      <hr />
     </div>
   );
 }
