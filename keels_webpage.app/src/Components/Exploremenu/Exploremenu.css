@@ -5,7 +5,6 @@
     width: 90%;
     align-items: center;
     justify-content: center; /* Center vertically */
-    background-color: aqua;
     margin: auto; /* Center horizontally */
     margin-top: 50px;
 }
@@ -18,4 +17,14 @@
     max-width: 70%;
     color: rgb(4, 59, 4);
     font-size: 20px;
+}
+.explore-menu-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    max-width: 900px;
+    text-align: center;
+    margin: 20px auto;
+   overflow-x: scroll;
 }
