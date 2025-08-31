@@ -8,11 +8,16 @@
 .kells_logo{
     width: 100px;
     height: auto;
+    display: block;
+    align-self: center;
 }
 .navbar-men ul{
     display: flex;
     gap: 30px;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
 
 }
 .navbar-men ul li{
@@ -25,20 +30,23 @@
 }
 .navbar-right{
     display: flex;
-    gap: 40px;
+    gap: 20px;
     padding-right: 20px;
+    align-items: center;
     
 }
 .navbar-right img {
     width: 30px ;
     height: auto;
+    display: block;
 }
 .navbar-right .serch{
     width: 25px !important;
     height: auto !important;
+    display: block;
 }
 .navbar-right button{
-    padding: 5px 8px ;
+    padding: 6px 12px ;
     border-radius: 10px;
     font-size: 13px;
     border: 1px solid rgb(17, 148, 17);
@@ -65,6 +73,6 @@
     min-width: 10px;
     background-color: tomato;
     border-radius: 5px;
-    top: -8px;
-    right: -8px;
+    top: -4px;
+    right: -4px;
 }
