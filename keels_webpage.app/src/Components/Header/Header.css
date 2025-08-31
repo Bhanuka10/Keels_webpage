@@ -8,14 +8,16 @@
     max-width: 1100px;
     border-radius: 20px;
     overflow: hidden; /* Prevent content overflow */
+    display: flex;
+    align-items: center; /* vertical center */
+    justify-content: flex-start; /* place contents toward left */
 }
 
 .header-contents {
-    text-align: center;
-    padding: 25px 35px ;
+    text-align: left; /* left-align text for better layout */
+    padding: 40px 35px;
     color: white; /* Ensure text is visible on the background */
-    max-width: 450px;
-    padding-top: 20px;
+    max-width: 480px;
    
   
 }
