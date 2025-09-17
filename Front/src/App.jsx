@@ -1,16 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+
+import Footer from './Components/Footer/Footer'
+
 import Navigation from './Components/Navigation/Navigation'
 
-function App() {
-  const [count, setCount] = useState(0)
 
+function App() {
   return (
-    <div>
-      <Navigation />
-    </div>
+
+    <>
+      <div className="app-container">
+        <Navbar />
+        <Footer />
+      </div>
+    </>
   )
 }
 
