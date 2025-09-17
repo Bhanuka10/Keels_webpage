@@ -1,0 +1,75 @@
+
+.navbar{
+    width: 90%;
+    height: 60px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 30px; /* Increased from 20px to 30px */
+    
+    
+}
+.btn-outline-secondary{
+    padding-left: 20px;
+    width: 40px;
+    height: 40px;}
+.btn-outline-secondary span{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.navbar-content {
+    background-color: aqua;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+    padding-left: 100px;
+}
+.navbar-content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+   gap: 30px;
+
+}
+.navbar-content ul li a{
+   
+    cursor: pointer;
+    font-family: poppins;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+
+}
+.login-part{
+    display: flex;
+    gap: 30px;
+    margin-left: 0px;
+    font-family: poppins;
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+    padding-left: 200px;
+}
+.login-part a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-family: poppins;
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+
+}
+
+/* Added styling for cart icon with margin */
+.bi-cart {
+    margin-left: 10px; /* Add space before the cart icon */
+}
