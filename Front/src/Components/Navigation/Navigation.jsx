@@ -8,8 +8,8 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 function Navigation() {
   return (
     <div>
-        <div className='navbar'>
-            <div>
+        <div className='navbarr'>
+            <div className='"navbar navbar-expand-lg navbar-dark bg-dark"'>
                 <button
   className="btn btn-outline-secondary"
   type="button"
@@ -17,7 +17,7 @@ function Navigation() {
   data-bs-target="#sidebar"
   aria-controls="sidebar"
 >
-  <span className="navbar-toggler-icon" style={{ width: '15px', height: '10px' , }}></span>
+  <span className="navbar-toggler-icon" style={{ width: '15px', height: '10px'  }}></span>
 </button>
 
             </div>
