@@ -1,3 +1,13 @@
+ Navigation-bar
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #323131;
+
 :root {
   font-family: 'Arial', 'Helvetica', sans-serif;
   line-height: 1.5;
@@ -75,4 +85,5 @@ button:focus-visible {
   button {
     background-color: #1a1a1a;
   }
+ develop
 }
