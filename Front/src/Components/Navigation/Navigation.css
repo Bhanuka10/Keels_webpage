@@ -9,8 +9,8 @@
     width: 95%;
     height: 30px;
     border-radius: 20px;
-    border: #111111 solid 2px;
-    box-shadow: inset 0px 0px 10px 0px rgba(255, 255, 255, 0.2);
+    border: #111111 solid 1px;
+    box-shadow: inset 0px 0px 6px 0px rgba(255, 255, 255, 0.2);
     font-family: poppins;
     animation: fadeInDown 0.8s ease-in-out;
     position: relative;
