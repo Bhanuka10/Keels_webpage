@@ -1,15 +1,34 @@
 import React from 'react';
 import './Navigation.css';
+<<<<<<< Updated upstream
 
+=======
+// import 'bootstrap/dist/css/bootstrap.min.css';
+>>>>>>> Stashed changes
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Needed for sidebar toggle
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 
 function Navigation() {
   return (
+<<<<<<< Updated upstream
 <div className='nav_bar'>
   <div className='nav_sidebar'>
     <i className="bi bi-list" style={{ fontSize: '20px', cursor: 'pointer' }}></i>
+=======
+    <div className='navigation'>
+        <div className='navbarr'>
+            <div className='navbar navbar-expand-lg custom-navbar'>
+                <button
+  className="btn btn-outline-secondary"
+  type="button"
+  data-bs-toggle="offcanvas"
+  data-bs-target="#sidebar"
+  aria-controls="sidebar"
+>
+  <span className="navbar-toggler-icon" style={{ width: '15px', height: '10px'  }}></span>
+</button>
+>>>>>>> Stashed changes
 
 
   </div>
