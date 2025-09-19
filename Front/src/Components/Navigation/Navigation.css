@@ -1,7 +1,29 @@
+<<<<<<< Updated upstream
 .nav_bar{
     background-color: #2c2b2b;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px 20px;
+=======
+.navigation {
+    width: 100%;
+    background-color: rgb(201, 136, 57);
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.custom-navbar {
+  background-color: transparent; /* Or any color you want */
+}
+.body{
+    background-color: rgb(53, 54, 54);
+}
+.navbarr{
+    width: 90%;
+    height: 50px;
+    background-color: rgb(53, 54, 54);
+>>>>>>> Stashed changes
     display: flex;
     justify-content: space-between;
     align-items: center;

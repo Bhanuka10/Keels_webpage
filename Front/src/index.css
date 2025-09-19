@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
  Navigation-bar
 html {
     scroll-behavior: smooth;
@@ -86,4 +87,8 @@ button:focus-visible {
     background-color: #1a1a1a;
   }
  develop
+=======
+html {
+    background-color: rgb(201, 136, 57);
+>>>>>>> Stashed changes
 }
