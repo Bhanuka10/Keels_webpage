@@ -85,7 +85,6 @@
   background-color: rgba(30, 30, 30, 0.7);
   margin: 0 auto;
   border-radius: 12px;
-  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   box-shadow: 
     0 8px 32px rgba(0, 0, 0, 0.3),
@@ -111,7 +110,6 @@
   animation: float 3s ease-in-out infinite;
   background: linear-gradient(45deg, #9c55e4, #5634d1);
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
@@ -122,7 +120,6 @@
   margin: 5px 0;
   background: linear-gradient(90deg, #c576f6, #8c43e6);
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: fadeIn 0.5s ease forwards;
   opacity: 0;

@@ -1,7 +1,5 @@
 .nav_bar{
-    
-    background-color: #2c2b2b;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgba(26, 26, 26, 0.95);
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -11,11 +9,42 @@
     height: 30px;
     border-radius: 20px;
     border: #111111 solid 1px;
-    box-shadow: inset 0px 0px 6px 0px rgba(255, 255, 255, 0.2);
+    box-shadow: 
+        inset 0px 0px 10px 0px rgba(77, 171, 247, 0.15),
+        0 10px 20px rgba(0, 0, 0, 0.3);
     font-family: poppins;
     animation: fadeInDown 0.8s ease-in-out;
     position: relative;
+    overflow: hidden;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
+}
 
+.nav_bar.scrolled {
+    background-color: rgba(22, 22, 22, 0.98);
+    box-shadow: 
+        inset 0px 0px 15px 0px rgba(77, 171, 247, 0.2),
+        0 15px 25px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px);
+}
+
+.nav_glow {
+    position: absolute;
+    top: -80px;
+    left: -100px;
+    width: 150%;
+    height: 150px;
+    background: radial-gradient(
+        ellipse at center,
+        rgba(77, 171, 247, 0.15) 0%,
+        rgba(21, 21, 21, 0) 70%
+    );
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.7;
+    animation: pulse 8s infinite alternate;
 }
 
 @keyframes fadeInDown {
@@ -29,28 +58,36 @@
     }
 }
 .nav_content{
-    
-    
     justify-content: center;
     align-items: center;
 }
+
 .nav_content ul{
     list-style: none;
     display: flex;
     gap: 25px;
     justify-content: center;
     align-items: center;
-
+    margin: 0;
+    padding: 0;
 }
+
+.nav_content ul .divider {
+    color: rgba(255, 255, 255, 0.3);
+    margin: 0;
+    font-size: 14px;
+}
+
 .nav_content ul li a{
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    font-weight: 500;
     transition: all 0.3s ease;
     font-family: poppins;
     font-size: 12px;
     position: relative;
-    padding: 2px 0;
+    padding: 4px 0;
+    letter-spacing: 0.5px;
 }
 
 .nav_content ul li a::after {
@@ -58,94 +95,153 @@
     position: absolute;
     width: 0;
     height: 2px;
-    bottom: -2px;
-    left: 0;
-    background-color: #4dabf7;
-    transition: width 0.3s ease;
+    bottom: -4px;
+    left: 50%;
+    background: linear-gradient(90deg, #3a7bd5, #00d2ff);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transform: translateX(-50%);
+    border-radius: 2px;
 }
 
 .nav_content ul li a:hover {
     color: #4dabf7;
+    text-shadow: 0 0 5px rgba(77, 171, 247, 0.5);
 }
 
 .nav_content ul li a:hover::after {
     width: 100%;
 }
-.nav_user{
+.nav_user {
     display: flex;
     gap: 15px;
     justify-content: center;
     align-items: center;
 }
-.login{
-    padding: 8px 16px;
+
+.login {
+    padding: 6px 12px;
     display: flex;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    
-     gap: 10px;
+    gap: 12px;
 }
-.login a{
-    padding: 4px 10px;
+
+.login a {
+    padding: 5px 12px;
     font-family: poppins;
     text-decoration: none;
     color: white;
-    gap: 10px;
     font-size: 12px;
-    background-color: rgb(43, 42, 42);
-    border: #111111 solid 1px;
+    background-color: rgba(40, 40, 40, 0.7);
     border-radius: 30px;
-    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.2);
-    transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
     z-index: 1;
+    transition: all 0.4s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    letter-spacing: 0.5px;
+}
+
+.login-btn {
+    border: 1px solid rgba(77, 171, 247, 0.4);
+    box-shadow: 0px 0px 10px 0px rgba(77, 171, 247, 0.15);
+}
+
+.signup-btn {
+    background: linear-gradient(45deg, rgba(58, 123, 213, 0.8), rgba(0, 210, 255, 0.8));
+    border: none;
+    box-shadow: 0px 4px 10px 0px rgba(58, 123, 213, 0.3);
 }
 
 .login a:hover {
     color: #fff;
-    transform: scale(1.05);
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 15px 0px rgba(77, 171, 247, 0.3);
+}
+
+.login-btn:hover {
+    border-color: rgba(77, 171, 247, 0.7);
+    background-color: rgba(77, 171, 247, 0.1);
+}
+
+.signup-btn:hover {
+    background: linear-gradient(45deg, rgba(58, 123, 213, 0.9), rgba(0, 210, 255, 0.9));
 }
 
 .login a::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: -50%;
     left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    width: 40px;
+    height: 200%;
+    background: linear-gradient(
+        90deg, 
+        transparent, 
+        rgba(255, 255, 255, 0.3), 
+        transparent
+    );
+    transform: rotate(35deg);
     transition: left 0.7s;
     z-index: -1;
 }
 
 .login a:hover::before {
-    left: 100%;
+    left: 150%;
 }
-.bi-cart{
-    font-size: 20px;
+
+.cart {
+    position: relative;
+    margin-right: 5px;
+}
+
+.cart-icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.bi-cart {
+    font-size: 18px;
     color: white;
     cursor: pointer;
     transition: all 0.3s ease;
+    filter: drop-shadow(0 0 3px rgba(77, 171, 247, 0.3));
 }
 
 .bi-cart:hover {
     color: #4dabf7;
     transform: scale(1.2);
-    animation: pulse 1s infinite;
+    animation: pulse 1.5s infinite;
 }
 
-@keyframes pulse {
-    0% {
-        transform: scale(1);
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: linear-gradient(45deg, #3a7bd5, #00d2ff);
+    color: white;
+    border-radius: 50%;
+    font-size: 10px;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
     }
-    50% {
-        transform: scale(1.1);
+    40% {
+        transform: translateY(-4px);
     }
-    100% {
-        transform: scale(1);
+    60% {
+        transform: translateY(-2px);
     }
 }
 .bi-list{
@@ -170,49 +266,97 @@
            opacity: 1;
        }
    }
-   .searchbar{
-       display: flex;
-       align-items: center;
-       background-color: #3c3b3b;
-       border: #111111 solid 1px;
-       border-radius: 30px;
-       padding: 5px 10px;
-       box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.2);
-       gap: 10px;
-       font-family: poppins;
-       height: 20px;
-       width: 200px;
-       transition: all 0.3s ease;
-       animation: slideInRight 0.8s ease-in-out;
-   }
-   
-   .searchbar:focus-within {
-       box-shadow: 0px 0px 8px 0px rgba(77, 171, 247, 0.5);
-       width: 220px;
-   }
-   
-   @keyframes slideInRight {
-       from {
-           opacity: 0;
-           transform: translateX(20px);
-       }
-       to {
-           opacity: 1;
-           transform: translateX(0);
-       }
-   }
-   .searchbar input{
-            background-color: transparent;
-            border: none;
-            outline: none;
-            color: white;
-            font-size: 12px;
-            width: 100%;
-            font-family: poppins;
-   }
+   .searchbar {
+    display: flex;
+    align-items: center;
+    background-color: rgba(40, 40, 40, 0.5);
+    border: 1px solid rgba(77, 171, 247, 0.2);
+    border-radius: 30px;
+    padding: 5px 15px;
+    box-shadow: 
+        inset 0px 0px 8px 0px rgba(0, 0, 0, 0.3),
+        0px 0px 8px 0px rgba(77, 171, 247, 0.15);
+    gap: 10px;
+    font-family: poppins;
+    height: 20px;
+    width: 200px;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    animation: slideInRight 0.8s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
 
-   .bi-search{
-         color: white;
-         font-size: 10px;
-         cursor: pointer;
-   }
+.searchbar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 60px;
+    height: 100%;
+    background: linear-gradient(
+        90deg, 
+        transparent, 
+        rgba(77, 171, 247, 0.1), 
+        transparent
+    );
+    transition: left 1.5s ease;
+    pointer-events: none;
+}
+
+.searchbar:focus-within::before,
+.searchbar.focused::before {
+    left: 100%;
+}
+
+.searchbar:focus-within,
+.searchbar.focused {
+    box-shadow: 
+        inset 0px 0px 8px 0px rgba(0, 0, 0, 0.3),
+        0px 0px 12px 0px rgba(77, 171, 247, 0.35);
+    border-color: rgba(77, 171, 247, 0.5);
+    width: 220px;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.searchbar input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 12px;
+    width: 100%;
+    font-family: poppins;
+}
+
+.searchbar input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.3s ease;
+}
+
+.searchbar:focus-within input::placeholder,
+.searchbar.focused input::placeholder {
+    color: rgba(77, 171, 247, 0.7);
+}
+
+.bi-search {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.searchbar:focus-within .bi-search,
+.searchbar.focused .bi-search {
+    color: #4dabf7;
+    transform: scale(1.1);
+}
